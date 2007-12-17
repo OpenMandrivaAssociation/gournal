@@ -46,9 +46,15 @@ mkdir -p $RPM_BUILD_ROOT/%_datadir/%name
 cp *.glade pixmaps/*.png $RPM_BUILD_ROOT/%_datadir/%name
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="%{name}.png" needs="x11" title="Gournal" longtitle="Handwriting notepad" section="Office/Accessories"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=Office;
+Icon=%{name}.png
+Name=Gournal
+Comment=Handwriting notepad
+Categories=Office/Accessories
 EOF
 
 #icons
@@ -73,7 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGES README
 %{_bindir}/%name
 %{_datadir}/%name
-%{_menudir}/%name
+%{_datadir}/applications/mandriva-%name.desktop
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
