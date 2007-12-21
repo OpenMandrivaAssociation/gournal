@@ -11,6 +11,7 @@ Source:		http://www.adebenham.com/debian/%{name}_%{version}-1.tar.bz2
 URL:		http://www.adebenham.com/gournal/
 License:	GPL
 Group:		Office
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
 BuildRequires:  ImageMagick
 
