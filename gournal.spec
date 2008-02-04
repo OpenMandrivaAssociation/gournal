@@ -52,7 +52,7 @@ cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
 [Desktop Entry]
 Type=Application
 Exec=Office;
-Icon=%{name}.png
+Icon=%{name}
 Name=Gournal
 Comment=Handwriting notepad
 Categories=Office/Accessories
