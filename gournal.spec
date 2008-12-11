@@ -13,7 +13,7 @@ License:	GPL
 Group:		Office
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
-BuildRequires:  ImageMagick
+BuildRequires:  imagemagick
 
 %description
 Gournal is a note-taking application written for usage on Tablet-PCs.  It's
