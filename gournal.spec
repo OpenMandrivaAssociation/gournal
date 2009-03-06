@@ -1,6 +1,6 @@
 %define name	gournal
 %define version	0.5.1
-%define release %mkrel 5
+%define release %mkrel 6
 
 Name: 	 	%{name}
 Summary: 	GNOME hardwriting notepad
