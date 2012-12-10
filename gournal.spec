@@ -89,3 +89,53 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
 
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.5.1-8mdv2011.0
++ Revision: 619220
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 11 2009 Thierry Vignaud <tv@mandriva.org> 0.5.1-7mdv2010.0
++ Revision: 437802
+- rebuild
+
+* Fri Mar 06 2009 Antoine Ginies <aginies@mandriva.com> 0.5.1-6mdv2009.1
++ Revision: 350623
+- 2009.1 rebuild
+
+* Fri Mar 06 2009 Antoine Ginies <aginies@mandriva.com> 0.5.1-5mdv2009.1
++ Revision: 350291
+- 2009.1 rebuild
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - lowercase ImageMagick
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0.5.1-4mdv2009.0
++ Revision: 246526
+- rebuild
+- fix 'error: for key "Icon" in group "Desktop Entry" is an icon name with an
+  extension, but there should be no extension as described in the Icon Theme
+  Specification if the value is not an absolute path'
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tv@mandriva.org> 0.5.1-2mdv2008.1
++ Revision: 131674
+- auto-convert XDG menu entry
+- kill re-definition of %%buildroot on Pixel's request
+- import gournal
+
+
+* Sun Jan 22 2006 Nicolas Lécureuil <neoclust@mandriva.org> 0.5.1-2mdk
+- Add BuildRequires: ImageMagick
+
+* Wed Dec 07 2005 Lenny Cartier <lenny@mandriva.com> 0.5.1-1mdk
+- 0.5.1
+
+* Mon May 3 2004 Austin Acton <austin@mandrake.org> 0.3-1mdk
+- initial package
